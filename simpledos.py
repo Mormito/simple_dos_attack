@@ -2,7 +2,9 @@
 
 import requests
 
-target = input("Paste an IP or a site address: ")
+target = "https://" + input("Paste a site address: ")
+
+print(target + " | ")
 
 while True:
     r = requests.get(target)
